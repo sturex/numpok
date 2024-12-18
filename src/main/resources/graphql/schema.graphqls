@@ -1,0 +1,20 @@
+
+type Query {
+    selfPlay(
+        solutionAliasInputs: [SolutionAliasInput!]!
+        selfPlayPropertiesInput: SelfPlayPropertiesInput!
+    ): Int!
+}
+
+input SolutionAliasInput {
+    solutionName: String!,
+    alias: String!
+}
+
+input SelfPlayPropertiesInput {
+    bbAmount: Float!,
+    maxInitialStack: Float!,
+    minInitialStack: Float!,
+    batchSize: Int!
+    batchCount: Int!
+}

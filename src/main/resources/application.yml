@@ -1,0 +1,12 @@
+server:
+  port: 8000
+
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+    schema:
+      locations: classpath*:graphql/**/
+      printer:
+        enabled: true
+
